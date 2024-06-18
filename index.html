@@ -140,12 +140,10 @@
         </div>
 
         <h2>Contact us for an Offer</h2>
-        <form id="emailForm">
-            Enter your subject:<br>
-            <input type="text" id="emailSubject"><br>
-            Enter your message:<br>
-            <textarea id="emailBody" rows="5" cols="30"></textarea><br><br>
-            <input type="button" value="Send Email" onclick="sendMail()">
+        <form class="contact-form" id="emailForm">
+            <input type="text" id="emailSubject" name="subject" placeholder="mail subject" required>
+            <textarea name="message" id="emailBody" placeholder="Your Message" required></textarea>
+            <button type="submit" onclick="sendMail()">Submit</button>
         </form>
 
         <script>
