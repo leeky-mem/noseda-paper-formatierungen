@@ -51,6 +51,30 @@
             bottom: 0;
             width: 100%;
         }
+        .github-stats {
+            list-style-type: none;
+            padding: 0;
+        }
+        .github-stats li {
+            background-color: #f6f8fa;
+            color:#000;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            padding: 12px 20px;
+            font-size: 16px;
+        }
+        .github-stats li:not(:last-child) {
+            margin-bottom: 0.5rem;
+        }
+        .github-stats-title {
+            text-align: center;
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #e1e4e8;
+        }
     </style>
 </head>
 <body>
@@ -88,6 +112,14 @@
 
         <h3>Billiard</h3>
         <p>Mario did a perfect game once, just so you know.</p>
+
+    <h3 class="github-stats-title">ZHAW GitHub Contribution Stats</h3>
+    <ul class="github-stats">
+        <li>Commits: 1085</li>
+        <li>Pull Requests Merged: 30</li>
+        <li>PR Reviews: 8</li>
+        <li>Issues Opened: 80</li>
+    </ul>
     </div>
 
     <div class="footer">
