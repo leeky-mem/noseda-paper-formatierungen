@@ -66,6 +66,32 @@
         tr:nth-child(even) {
             background-color: rgba(30, 30, 30, 0.5);
         }
+        .ad-div {
+            background-color: #ff00ff;
+            color: #00ff00;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            padding: 50px;
+            width: 300px;
+        }
+        h2 {
+            color: #ffff00;
+            font-size: 26px;
+        }
+        p {
+            color: #00ffff;
+            font-size: 24px;
+        }
+        .blink-image {
+            width: 200px;
+            height: 120px;
+            animation: blinker 1s linear infinite;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -79,7 +105,7 @@
         <a href="about.html">About Mario Noseda</a>
     </div>
 
-    <div class="main">
+    <div class="main" style="display: flex;">
         <table>
             <tr>
                 <th>MDPI</th>
@@ -107,7 +133,14 @@
                 <td>Priceless</td>
             </tr>
         </table>
+        <div class="ad-div" style="margin: 15px;">
+            <h2>$$ BIG SALE $$</h1>
+            <p> Review by Senior Hardware </p>
+            <img src="img/senior.png" alt="Blinking Ad" class="blink-image">
+            <h2> 300 $$$ </h1>
+        </div style="height=20px">
     </div>
+
 
     <div class="footer">
         <p>© 2024 Noseda Paper Formatierungen</p>
